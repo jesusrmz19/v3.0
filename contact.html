@@ -1,83 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!---RESPONSIVE--->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-        <!---LINK TO THE CSS FILE--->
-        <link rel="stylesheet" href="main.css">
-        <!---FONT AWESOME--->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <!-- Font -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:400,700" rel="stylesheet">
-        <!-- Tittle and Icon -->
-        <title>Jesús Ramírez</title>
-        <link rel="icon" href="images/logo.png">
-    </head>
-    <body class="black">
-        <main class=contact-wrapper>
-            <div class="contact-one"></div>
-            <div class="contact-two">
-                <header class="header">
-                            <a href="index.html"><img title="Logo" alt="Jesus Ramirez Logo" src="images/logo_BW.png"></a>
-                            <navbar class="flex-nav">
-                                <a id="openMenu" href="#" class="toggleNav">menu</a>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a id="toAbout" href="index.html#about">About</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a class="active" href="contact.html">Contact</a></li>
-                                </ul>
-                            </navbar>
-                </header>
-                <h1>Get in touch</h1>
-                <div class="form-wrapper">
-                    <form id="contactMe">
-                        <div class="nameInput">
-                            <input id="formName" value="" onkeyup="this.setAttribute('value', this.value);"  name="name" type="text" autocomplete="off">
-                            <label>Name</label>
-                            <span class="focus-border"></span>
-                        </div>
-                        <div class="nameInput">
-                            <input id="formEmail" value="" onkeyup="this.setAttribute('value', this.value);" name="email" type="text" autocomplete="off">
-                            <label>Email</label>
-                            <span class="focus-border"></span>
-                        </div>
-                        <div class="nameInput">
-                            <input id="formMessage" value="" onkeyup="this.setAttribute('value', this.value);" name="message" type="text" autocomplete="off">
-                            <label>Message</label>
-                            <span class="focus-border"></span>
-                        </div>
-                    </form>
-                    <p id="errorForm" class="error">Error! Please, complete the form</p>
-                    <p id="errorEmail" class="error">Please use a correct email address</p>
-                    <button class="submitBtn" type="submit" value="Submit">Submit!</button>
-                </div>
-                <footer class="footer">
-                    <ul>
-                        <li><a href="mailto:jrmz.maldonado@gmail.com?Subject=Hello%20Jesus"><i class="fas fa-envelope"></i></a></li>
-                        <li><a href="https://twitter.com/jesusrmz_" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://codepen.io/jesusrmz/" target="_blank"><i class="fab fa-codepen"></i></a></li>
-                        <li><a href="https://www.instagram.com/jesusrmz_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </footer>
+  <head>
+    <!---RESPONSIVE--->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---LINK TO THE CSS FILE--->
+    <link rel="stylesheet" href="main.css" />
+    <!---FONT AWESOME--->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+    <!-- Tittle and Icon -->
+    <title>Jesús Ramírez</title>
+    <link rel="icon" href="images/logo.png" />
+  </head>
+  <body class="black">
+    <main class="contact-wrapper">
+      <div class="contact-one"></div>
+      <div class="contact-two">
+        <header class="header">
+          <a href="index.html"
+            ><img
+              title="Logo"
+              alt="Jesus Ramirez Logo"
+              src="images/logo_BW.png"
+          /></a>
+          <navbar class="flex-nav">
+            <a id="openMenu" href="#" class="toggleNav">menu</a>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a id="toAbout" href="index.html#about">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+          </navbar>
+        </header>
+        <h1>Get in touch</h1>
+        <div class="form-wrapper">
+          <form id="contactMe" aria-disabled="true" disabled="disabled">
+            <div class="nameInput">
+              <input
+                id="formName"
+                value=""
+                onkeyup="this.setAttribute('value', this.value);"
+                name="name"
+                type="text"
+                autocomplete="off"
+              />
+              <label>Name</label>
+              <span class="focus-border"></span>
             </div>
-        </main>
-        <div role="menu" aria-label="navigation menu for small sizes" id="myMenu" class="overlay">
-            <a role="button" aria-label="close navigation" href="javascript:void(0)" class="closebtn" id="closeNav">&larr;</a>
-            <div role="navigation" class="overlay-content">
-                <a href="index.html">Home</a>
-                <a id="aboutNav" href="index.html#about">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-                <div class="overlay-content-social">
-                    <a aria-label="Send an email to Jesus" href="mailto:jrmz.maldonado@gmail.com?Subject=Hello%20Jesus"><i class="fas fa-envelope"></i></a>
-                    <a aria-label="Link to Jesus's twitter profile" href="https://twitter.com/jesusrmz_" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a aria-label="Link to Jesus's codepen profile" href="https://codepen.io/jesusrmz/" target="_blank"><i class="fab fa-codepen"></i></a>
-                    <a aria-label="Link to Jesus's instagram profile" href="https://www.instagram.com/jesusrmz_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
+            <div class="nameInput">
+              <input
+                id="formEmail"
+                value=""
+                onkeyup="this.setAttribute('value', this.value);"
+                name="email"
+                type="text"
+                autocomplete="off"
+              />
+              <label>Email</label>
+              <span class="focus-border"></span>
             </div>
+            <div class="nameInput">
+              <input
+                id="formMessage"
+                value=""
+                onkeyup="this.setAttribute('value', this.value);"
+                name="message"
+                type="text"
+                autocomplete="off"
+              />
+              <label>Message</label>
+              <span class="focus-border"></span>
+            </div>
+          </form>
+          <p id="errorForm" class="error">Error! Please, complete the form</p>
+          <p id="errorEmail" class="error">
+            Please use a correct email address
+          </p>
+          <button class="submitBtn" value="Submit">Submit!</button>
         </div>
-        <script src="query.js"></script>
-    </body>
+        <footer class="footer">
+          <ul>
+            <li>
+              <a href="mailto:jrmz.maldonado@gmail.com?Subject=Hello%20Jesus"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/jesusrmz_" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/jesusrmz/" target="_blank"
+                ><i class="fab fa-codepen"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/jesusrmz_/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </main>
+    <div
+      role="menu"
+      aria-label="navigation menu for small sizes"
+      id="myMenu"
+      class="overlay"
+    >
+      <a
+        role="button"
+        aria-label="close navigation"
+        href="javascript:void(0)"
+        class="closebtn"
+        id="closeNav"
+        >&larr;</a
+      >
+      <div role="navigation" class="overlay-content">
+        <a href="index.html">Home</a>
+        <a id="aboutNav" href="index.html#about">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <div class="overlay-content-social">
+          <a
+            aria-label="Send an email to Jesus"
+            href="mailto:jrmz.maldonado@gmail.com?Subject=Hello%20Jesus"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a
+            aria-label="Link to Jesus's twitter profile"
+            href="https://twitter.com/jesusrmz_"
+            target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            aria-label="Link to Jesus's codepen profile"
+            href="https://codepen.io/jesusrmz/"
+            target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+          <a
+            aria-label="Link to Jesus's instagram profile"
+            href="https://www.instagram.com/jesusrmz_/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="query.js"></script>
+  </body>
 </html>
