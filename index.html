@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!---RESPONSIVE--->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <!---LINK TO THE CSS FILE--->
+        <link rel="stylesheet" href="main.css">
+        <!---FONT AWESOME--->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:400,700" rel="stylesheet">
+        <!-- Tittle and Icon -->
+        <title>Jesús Ramírez</title>
+        <link rel="icon" href="images/logo.png">
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html"><img title="Logo" alt="Jesus Ramirez Logo" src="images/logo.png"></a>
+            <navbar class="flex-nav" role="navigation">
+                <a id="openMenu" href="#" class="toggleNav">menu</a>
+                <ul role="menu">
+                    <li role="menuitem"><a class="active">Home</a></li>
+                    <li role="menuitem"><a id="toAbout">About</a></li>
+                    <li role="menuitem"><a href="portfolio.html">Portfolio</a></li>
+                    <li role="menuitem"><a href="contact.html">Contact</a></li>
+                </ul>
+            </navbar>
+        </header>
+        <main area-labelledby="Home Section" class="home">
+            <div class="home-wrapper">
+                <h2>hello, world!</h2>
+                <h1>I am Jesus Ramirez</h1>
+                <h2>Front End Web Developer,<br/>based in Mexico</h2>
+            </div>
+        </main>
+        <section role="complementary" class="about" id="about" area-labelledby="About Section">
+            <h3 role="tab">About Me</h3>
+            <div class="about_text">
+                <p role="none">I'm a self-taught front-end web developer based in Guadalajara, Mexico. With a degree in Electronic Engineering,  I do web development as a freelancer, working with marketing agencies like <a href="https://www.metamorfosis.design/" target="_blank">Metamorfosis</a>, and <a href="https://www.cpmarketing.mx/" target="_blank">CP Marketing</a>.</p>
+                <br/><br/>
+                <p role="none">Working full time as a Field Application Engineer for Ammon & Rizos, a manufacturer electronics representative company. I spend my free time studying to become a full stack web dev, hanging out with my girlfriend, my dogs, and playing basketball.</p>
+            </div>
+            <a role="button" aria-label="Jump to contact page" class="btnAbout" href="contact.html">Contact Me!</a>
+            <div class="about_img"></div>
+        </section>
+        <footer class="footer">
+            <ul role="menu">
+                <li role="menuitem"><a aria-label="Send an email to Jesus" href="mailto:jrmz.maldonado@gmail.com?Subject=Hello%20Jesus"><i class="fas fa-envelope"></i></a></li>
+                <li role="menuitem"><a aria-label="Link to Jesus's twitter profile" href="https://twitter.com/jesusrmz_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li role="menuitem"><a aria-label="Link to Jesus's codepen profile" href="https://codepen.io/jesusrmz/" target="_blank"><i class="fab fa-codepen"></i></a></li>
+                <li role="menuitem"><a aria-label="Link to Jesus's instagram profile" href="https://www.instagram.com/jesusrmz_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </footer>
+        <div role="menu" aria-label="navigation menu for small sizes" id="myMenu" class="overlay">
+            <a role="button" aria-label="close navigation" href="javascript:void(0)" class="closebtn" id="closeNav" >&larr;</a>
+            <div class="overlay-content" role="navigation">
+                <a href="index.html">Home</a>
+                <a id="aboutNav" href="index.html#about">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <div class="overlay-content-social">
+                    <a aria-label="Send an email to Jesus" href="mailto:jrmz.maldonado@gmail.com?Subject=Hello%20Jesus"><i class="fas fa-envelope"></i></a>
+                    <a aria-label="Link to Jesus's twitter profile" href="https://twitter.com/jesusrmz_" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a aria-label="Link to Jesus's codepen profile" href="https://codepen.io/jesusrmz/" target="_blank"><i class="fab fa-codepen"></i></a>
+                    <a aria-label="Link to Jesus's instagram profile" href="https://www.instagram.com/jesusrmz_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <script src="query.js"></script>
+    </body>
+</html>
