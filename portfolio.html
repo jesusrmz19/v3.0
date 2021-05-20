@@ -1,102 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!---RESPONSIVE--->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-        <!---LINK TO THE CSS FILE--->
-        <link rel="stylesheet" href="main.css">
-        <!---FONT AWESOME--->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <!-- Font -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:400,700" rel="stylesheet">
-        <!-- Tittle and Icon -->
-        <title>Jesús Ramírez</title>
-        <link rel="icon" href="images/logo.png">
-    </head>
-    <body>
-        <header class="header">
-            <a href="index.html"><img title="Logo" alt="Jesus Ramirez Logo" src="images/logo.png"></a>
-            <navbar class="flex-nav">
-                <a id="openMenu" href="#" class="toggleNav">menu</a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a id="toAbout" href="index.html#about">About</a></li>
-                    <li><a class="active" href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </navbar>
-        </header>
-        <section class="portfolio">
-            <div class="client one">
-                <img src="images/clesLogoBlanco.png">
-                <a style="display:block" href="http://cles.com.mx/" target="_blank">
-                    <div class="client-overlay">
-                        <h3>Cles de Mexico</h3>
-                        <p>Designed by <a href="https://www.metamorfosis.design/" target="_blank">Metamorfosis</a></p>
-                    </div>
-                </a>
-            </div>
-            <div class="client two">
-                <img src="images/vfitLogo.png">
-                <a style="display:block" href="http://vfit.jesusrmz.com/" target="_blank">
-                    <div class="client-overlay">
-                        <h3>VFIT</h3>
-                        <p>Designed by <a href="https://www.metamorfosis.design/" target="_blank">Metamorfosis</a></p>
-                    </div>
-                </a>
-            </div>
-            <div class="client three">
-                <img src="images/ilexLogoBlanco.png">
-                <a style="display:block" href="http://ilex.com.mx/" target="_blank">
-                    <div class="client-overlay">
-                        <h3>Ilex</h3>
-                        <p>Designed by <a href="index.html" target="_blank">Jesus</a></p>
-                    </div>
-                </a>
-            </div>
-            <div class="client four">
-                <img src="images/andreaLogoBlanco.png">
-                <a style="display:block" href="http://andreaparra.com.mx/" target="_blank">
-                    <div class="client-overlay-bottom">
-                        <h3>Andrea Parra</h3>
-                        <p>Designed by <a href="http://andreaparra.com.mx/" target="_blank">Client</a></p>
-                    </div>
-                </a>
-            </div>
-            <div class="client five">
-                <img src="images/divanoLogo.png">
-                <a style="display:block" href="https://www.divanobeaute.com/" target="_blank">
-                    <div class="client-overlay-bottom">
-                        <h3>Divano Beaute</h3>
-                        <p>Designed by <a href="https://www.cpmarketing.mx/" target="_blank"> CP Marketing</a></p>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <footer class="footer">
-            <ul>
-                <li><a href="mailto:jrmz.maldonado@gmail.com?Subject=Hello%20Jesus"><i class="fas fa-envelope"></i></a></li>
-                <li><a href="https://twitter.com/jesusrmz_" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://codepen.io/jesusrmz/" target="_blank"><i class="fab fa-codepen"></i></a></li>
-                <li><a href="https://www.instagram.com/jesusrmz_/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </footer>
-        <div id="myMenu" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" id="closeNav">&larr;</a>
-            <div class="overlay-content">
-                <a href="index.html">Home</a>
-                <a id="aboutNav" href="index.html#about">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-                <div class="overlay-content-social">
-                    <a href="mailto:jrmz.maldonado@gmail.com?Subject=Hello%20Jesus"><i class="fas fa-envelope"></i></a>
-                    <a href="https://twitter.com/jesusrmz_" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://codepen.io/jesusrmz/" target="_blank"><i class="fab fa-codepen"></i></a>
-                    <a href="https://www.instagram.com/jesusrmz_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
+  <head>
+    <!---RESPONSIVE--->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---LINK TO THE CSS FILE--->
+    <link rel="stylesheet" href="main.css" />
+    <!---FONT AWESOME--->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+    <!-- Tittle and Icon -->
+    <title>Jesús Ramírez</title>
+    <link rel="icon" href="images/logo.png" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"
+        ><img title="Logo" alt="Jesus Ramirez Logo" src="images/logo.png"
+      /></a>
+      <navbar class="flex-nav">
+        <a id="openMenu" href="#" class="toggleNav">menu</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a id="toAbout" href="index.html#about">About</a></li>
+          <li><a class="active" href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </navbar>
+    </header>
+    <section class="portfolio">
+      <div class="client one">
+        <img src="images/clesLogoBlanco.png" />
+        <a style="display: block" href="#" target="_blank">
+          <div class="client-overlay">
+            <h3>Cles de Mexico</h3>
+            <p>Designed by <a href="#" target="_blank">Metamorfosis</a></p>
+          </div>
+        </a>
+      </div>
+      <div class="client two">
+        <img src="images/vfitLogo.png" />
+        <a style="display: block" href="#" target="_blank">
+          <div class="client-overlay">
+            <h3>VFIT</h3>
+            <p>Designed by <a href="#" target="_blank">Metamorfosis</a></p>
+          </div>
+        </a>
+      </div>
+      <div class="client three">
+        <img src="images/ilexLogoBlanco.png" />
+        <a style="display: block" href="#" target="_blank">
+          <div class="client-overlay">
+            <h3>Ilex</h3>
+            <p>Designed by <a href="#" target="_blank">Jesus</a></p>
+          </div>
+        </a>
+      </div>
+      <div class="client four">
+        <img src="images/andreaLogoBlanco.png" />
+        <a style="display: block" href="#" target="_blank">
+          <div class="client-overlay-bottom">
+            <h3>Andrea Parra</h3>
+            <p>Designed by <a href="#" target="_blank">Client</a></p>
+          </div>
+        </a>
+      </div>
+      <div class="client five">
+        <img src="images/divanoLogo.png" />
+        <a style="display: block" href="#" target="_blank">
+          <div class="client-overlay-bottom">
+            <h3>Divano Beaute</h3>
+            <p>Designed by <a href="#" target="_blank"> CP Marketing</a></p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer class="footer">
+      <ul>
+        <li>
+          <a href="mailto:jrmz.maldonado@gmail.com?Subject=Hello%20Jesus"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/jesusrmz_" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://codepen.io/jesusrmz/" target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/jesusrmz_/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <div id="myMenu" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closeNav">&larr;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a id="aboutNav" href="index.html#about">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <div class="overlay-content-social">
+          <a href="mailto:jrmz.maldonado@gmail.com?Subject=Hello%20Jesus"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="https://twitter.com/jesusrmz_" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://codepen.io/jesusrmz/" target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+          <a href="https://www.instagram.com/jesusrmz_/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
-        <script src="query.js"></script>
-    </body>
+      </div>
+    </div>
+    <script src="query.js"></script>
+  </body>
 </html>
